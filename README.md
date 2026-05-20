@@ -12,7 +12,7 @@
 - ✅ **DedSec UI** - Watch Dogs 2 inspired cyberpunk interface
 - ✅ **Splash Glitch** - Pixel shift animation on boot
 - ✅ **Button Navigation** - UP/DOWN/OK/BACK physical buttons
-- ✅ **System Reboot** - Reboot via menu with watchdog timer
+- ✅ **System Reboot** - Reboot via menu 
 - ✅ **5GHz Support** - Native 5GHz deauth (RTL8720DN advantage!)
 
 ---
