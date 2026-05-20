@@ -2,9 +2,6 @@
 extern "C" void NVIC_SystemReset(void);
 
 
-// ============================================
-// AMBIL DARI NETERASER YANG SUDAH TERBUKTI
-// ============================================
 #include <map>
 #include <vector>
 #include <WiFi.h>
@@ -105,7 +102,7 @@ Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 
 #include "bitmap.h"
 
-  // PASTE SEMUA ARRAY BITMAP KAMU DISINI
+  // PASTE  ARRAY 
 
 // ===== STATE =====
 int selectedMenu = 0;
@@ -190,10 +187,10 @@ void doWiFiScan() {
   tft.setCursor(5, 40);
   tft.print("[*] Scanning...");
   
-  // ===== PANGGIL SCAN =====
+  // =====  SCAN =====
   wifi_scan_networks(scanResultHandler, NULL);
   
-  // ===== TUNGGU 5 DETIK (SCAN BUTUH WAKTU) =====
+  // =====   (SCAN  ) =====
   tft.drawRect(5, 55, 118, 6, ST7735_GREEN);
   unsigned long startScan = millis();
   
@@ -254,7 +251,7 @@ void doWiFiScan() {
   }
 }
 
-// ===== WIFI LIST PADAT =====
+// ===== WIFI LIST  =====
 void showWiFiList() {
   currentScreen = 5;
   tft.fillScreen(ST7735_BLACK);
@@ -405,7 +402,7 @@ void showSplashScreen() {
       }
     }
     
-    // Hapus pixel acak (efek glitch)
+  
     for (int i = 0; i < 15; i++) {
       tft.drawPixel(random(0, 128), yStart + random(0, h), ST7735_BLACK);
     }
@@ -427,7 +424,7 @@ void showSplashScreen() {
 
  
 
-// ===== MAIN MENU PADAT =====
+// ===== MAIN MENU  =====
 void showMainMenu() {
   currentScreen = 1;
   tft.fillScreen(ST7735_BLACK);
@@ -437,7 +434,7 @@ void showMainMenu() {
   const char* descs[] = {"NetScan", "Blackout", "BluePill", "System"};
   const uint16_t colors[] = {ST7735_GREEN, ST7735_RED, MAGENTA, CYAN};
   
-  int y = 22;  // Mulai lebih atas
+  int y = 22;  
   
   for (int i = 0; i < 4; i++) {
     if (i == selectedMenu) {
@@ -462,7 +459,7 @@ void showMainMenu() {
       tft.fillRect(110, y+5, 4, 4, colors[i]);
     }
     
-    y += 27;  // Spacing ketat
+    y += 27;  
   }
   
   footerBar("UP/DN:Nav  OK:Sel");
@@ -490,7 +487,7 @@ void showBLEScreen() {
   footerBar("OK:Launch  BACK:Menu");
 }
 
-// ===== DETAIL PADAT =====
+// ===== DETAIL  =====
 void showDetailScreen() {
   currentScreen = 6;
   tft.fillScreen(ST7735_BLACK);
@@ -639,9 +636,9 @@ void handleButtons() {
     case 6:
       if (ok) { deauthTarget = selectedNetwork; currentScreen = 3; startDeauth(); }
       break;
-    case 7:                               // <<< TAMBAH BARIS INI
-      if (ok) { rebootDevice(); }         // <<< TAMBAH BARIS INI
-      break;                              // <<< TAMBAH BARIS INI
+    case 7:                             
+      if (ok) { rebootDevice(); }         
+      break;                              
   }
 }
 
@@ -649,7 +646,7 @@ void setup() {
   Serial.begin(115200);
   delay(500);
   
-  // ===== MATIKAN WIFI DULU (CEGAH BLANK PUTIH) =====
+  // ===== 
   wifi_off();
   delay(300);
   
@@ -677,7 +674,7 @@ void setup() {
   delay(200);
   tft.fillScreen(ST7735_BLACK);
   
-  // ===== NYALAKAN WIFI =====
+  // ===== on WIFI =====
   initWiFi();
   
   // ===== SPLASH =====
