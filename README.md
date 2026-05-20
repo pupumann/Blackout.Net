@@ -150,4 +150,6 @@ This project is **FREE and OPEN SOURCE**
 
 its free, dont buy me a coffee, not open to donation. 
 
+AI help me write this readme hehe bbrrbrrrrbrbbrbrrrrrr
+
 **Happy Hacking! (N0t = Ethically   :)  ;) wink** 🔥
