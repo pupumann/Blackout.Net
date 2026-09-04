@@ -1,6 +1,6 @@
-# BW16 WiFi Deauther - Watch Dogs 2 DedSec Edition
+# BW16 WiFi Deauther
 
-🔥 A 2.4GHz & 5GHz WiFi Deauther for **BW16 (RTL8720DN)** with Watch Dogs 2 DedSec style UI, button navigation, and glitch splash screen.
+A 2.4GHz & 5GHz WiFi Deauther for **BW16 (RTL8720DN)** with TFT display interface, button navigation, and system controls.
 
 ---
 
@@ -8,12 +8,11 @@
 
 - ✅ **WiFi Scan** - Detect 2.4GHz & 5GHz networks with channel info
 - ✅ **Deauth Attack** - ALL mode (every AP) & SELECT mode (single target)
-- ✅ **BLE Spam** - Module placeholder (coming soon)
-- ✅ **DedSec UI** - Watch Dogs 2 inspired cyberpunk interface
-- ✅ **Splash Glitch** - Pixel shift animation on boot
+- ✅ **TFT UI** - Simple interface for device control
+- ✅ **Splash Screen** - Display animation on boot
 - ✅ **Button Navigation** - UP/DOWN/OK/BACK physical buttons
-- ✅ **System Reboot** - Reboot via menu 
-- ✅ **5GHz Support** - Native 5GHz deauth (RTL8720DN advantage!)
+- ✅ **System Reboot** - Reboot via menu
+- ✅ **5GHz Support** - Native 5GHz support using RTL8720DN
 
 ---
 
@@ -27,13 +26,13 @@
 | **Jumper Wires** | Female-to-Female Dupont | ~$1 |
 | **Breadboard** | Optional, for cleaner wiring | ~$2 |
 
-> **Total Build Cost: ~$10-12**
 
 ---
 
 ## 🔌 Wiring
 
 ### TFT ST7735 (1.44" 128x160)
+
 | TFT Pin | BW16 Pin | GPIO |
 |---------|----------|------|
 | VCC | 3.3V | - |
@@ -46,6 +45,7 @@
 | LED (BLK) | 3.3V | - |
 
 ### Navigation Buttons
+
 | Button | BW16 Pin | GPIO | Mode |
 |--------|----------|------|------|
 | UP | PB1 | GPIO 4 | INPUT_PULLUP |
@@ -73,21 +73,23 @@ Install via Arduino Library Manager:
 ## 🚀 How to Use
 
 1. **Upload** `jamm2.ino` to BW16 via Arduino IDE
-2. **Splash screen** appears with glitch effect (3 seconds)
-3. **Main Menu** - 4 options with DedSec style UI
+2. **Splash screen** appears during startup
+3. **Main Menu** appears on the TFT display
 4. **Navigate** using UP/DOWN buttons
 5. **Select** with OK button
 6. **Go back** with BACK button
 
 ### Menu Options:
+
 | Menu | Description |
 |------|-------------|
 | **WiFi_SCAN** | Scan 2.4GHz & 5GHz networks |
-| **DEAUTH** | Launch deauth attack (ALL or SELECT mode) |
+| **DEAUTH** | Launch deauth testing mode (ALL or SELECT mode) |
 | **BLE_SPAM** | BLE spam module (coming soon) |
 | **REBOOT** | System restart |
 
 ---
+
 ## 🎮 Controls
 
 | Button | Function |
@@ -99,24 +101,18 @@ Install via Arduino Library Manager:
 
 ---
 
-## 🔮 Upcoming Features
-
-- 🟢 **BLE Spam** - Bluetooth Low Energy advertising spam
-- 🟢 **WiFi Phishing** - Evil twin / captive portal
-- 🟢 **TFT ILI9225** - Support for 2.2" display
-- 🟢 **Touch Screen** 
-- 🟢 **Web UI** - Browser-based control (like original Deauther)
 
 ---
 
 ## 📝 Changelog
 
 ### v1.0 (May 2025)
+
 - Initial release
 - WiFi Scan 2.4GHz + 5GHz
 - Deauth ALL & SELECT mode
-- DedSec Watch Dogs 2 UI
-- Splash screen with glitch effect
+- TFT display interface
+- Splash screen
 - Button navigation
 - System reboot
 
@@ -143,13 +139,10 @@ This project is **FREE and OPEN SOURCE**
 - ✅ Feel free to **develop your own version**
 - ❌ No warranty provided
 
-
 ---
 
 ## 🌐 Community
 
-its free, dont buy me a coffee, not open to donation. 
+This project is provided free of charge and is not open to donations.
 
-AI help me write this readme hehe bbrrbrrrrbrbbrbrrrrrr
-
-**Happy Hacking! (N0t = Ethically   :)  ;) wink** 🔥
+Contributions, improvements, and issue reports are welcome.
