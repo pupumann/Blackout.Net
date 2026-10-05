@@ -1,4 +1,4 @@
-![Uploading 1791199687994.jpg…]()
+
 
 
 # BW16 WiFi Deauther
