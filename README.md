@@ -26,7 +26,7 @@ A 2.4GHz & 5GHz WiFi Deauther for **BW16 (RTL8720DN)** with TFT display interfac
 | **BW16 DevKit** | RTL8720DN, Dual-band WiFi 2.4GHz + 5GHz | ~$5 |
 | **TFT Display** | 1.44" ST7735, 128x160, SPI Interface | ~$3 |
 | **Push Buttons** | 4x Tactile Switch 6x6mm | ~$1 |
-| **Jumper Wires** | Female-to-Female Dupont | ~$1 |
+| **Jumper Wires** | male-to-Female Dupont | ~$1 |
 | **Breadboard** | Optional, for cleaner wiring | ~$2 |
 
 
